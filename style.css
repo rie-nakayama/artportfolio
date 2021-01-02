@@ -1,0 +1,75 @@
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 2rem;        
+    font-size: 2.0rem;
+    line-height: 1.0;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: rgba(30, 30, 75, 0.733));
+
+}
+
+h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 2rem;    
+    font-size: 1.5rem;
+    line-height: 1.0;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: rgba(51, 51, 95, 0.733);
+    
+}
+
+
+p, ul {
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px;  
+    font-size: 0.75rem;
+    line-height: 1.0;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: rgba(51, 51, 95, 0.733);
+}
+
+html, body, footer {
+    width: 100%;
+    height: 100%;
+    margin: 0; padding: 0;
+    background-color:#f5f2f0;
+  }
+
+
+/* First the Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    justify-items: center;
+    justify-self: stretch;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  /* The Picture Frame */
+.gallery-frame {
+    width: 250px;
+    height: 300px;
+    padding: .5rem;
+    font-size: 1.0rem;
+    text-align: center;
+    color: #d9d9d9;
+    }
+  
+/* The Images */
+.gallery-img {
+    width: 250px;
+    max-height: 300px;
+    object-fit: cover;
+    transition: opacity 0.25s ease-in-out;
+    
+  }
+  
+  .gallery-img:hover {
+    opacity: .7;
+  }
