@@ -1,44 +1,83 @@
-
-h1 {
-    font-family: 'Open Sans', sans-serif;
-    margin: 2rem;        
-    font-size: 2.0rem;
-    line-height: 1.0;
-    letter-spacing: 0.5px;
-    text-align: left;
-    color: rgba(30, 30, 75, 0.733));
-
-}
-
-h2, h3 {
-    font-family: 'Open Sans', sans-serif;
-    margin: 2rem;    
-    font-size: 1.5rem;
-    line-height: 1.0;
-    letter-spacing: 0.5px;
-    text-align: left;
-    color: rgba(51, 51, 95, 0.733);
-    
-}
-
-
-p, ul {
-    font-family: 'Open Sans', sans-serif;
-    margin: 5px;  
-    font-size: 0.75rem;
-    line-height: 1.0;
-    letter-spacing: 0.5px;
-    text-align: left;
-    color: rgba(51, 51, 95, 0.733);
-}
-
-html, body, footer {
+html {
     width: 100%;
     height: 100%;
     margin: 0; padding: 0;
-    background-color:#f5f2f0;
+    background-color:#c2c2c5;
   }
 
+.bio {
+    align-items: center;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 0;
+    color: rgba(25, 25, 97, 0.733)
+}
+
+footer {
+    align-items: center;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-bottom: 5%;
+    color: rgba(25, 25, 97, 0.733);
+    font-family: 'Tajawal', sans-serif;;  
+    font-size: 1.25rem;
+    line-height: 1.0;
+    letter-spacing: 0.5px;
+}
+
+.bio h1 {
+        font-family: 'Tajawal', sans-serif;;   
+        font-size: 2.0rem;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        color: rgba(25, 25, 97, 0.733);
+        }
+    
+h2 {
+        font-family: 'Tajawal', sans-serif;;  
+        font-size: 1.25rem;
+        line-height: 1.0;
+        letter-spacing: 0.5px;
+        color: rgba(25, 25, 97, 0.733);    
+    }
+    
+ 
+nav ul {
+    list-style-type: none;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 0;
+    overflow: hidden;
+    }
+
+ footer li {
+    color: rgba(25, 25, 97, 0.733);
+    font-size: 1.0rem;
+    line-height: 1.5;
+    font-family: 'Tajawal', sans-serif;;
+    text-align: left;
+    }
+
+ nav li {
+    float:  left;
+    }
+
+  
+  nav li a {
+    display: block;
+    color: rgba(25, 25, 97, 0.733);
+    text-align: center;
+    padding: 14px 14px 16px 0px;
+    font-size: 1.25rem;
+    line-height: 1.0;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    font-family: 'Tajawal', sans-serif;;}   
+  
+  /* Change the link color to #111 (black) on hover */
+  nav li a:hover {
+    color: rgb(198, 115, 209);
+  }
 
 /* First the Grid */
 .gallery-grid {
@@ -55,21 +94,40 @@ html, body, footer {
 .gallery-frame {
     width: 250px;
     height: 300px;
-    padding: .5rem;
-    font-size: 1.0rem;
-    text-align: center;
-    color: #d9d9d9;
+    padding: .5rem;   
+    background-color:#c9c9c9; 
+    position: relative;
     }
   
 /* The Images */
 .gallery-img {
+    width: 100%;
+    height: 300px;
+    object-fit: scale-down;
+    transition: opacity 0.25s ease-in-out;    
+  }
+
+.gallery-frame .text {
+    position: absolute;
+    top: 50%;
     width: 250px;
     max-height: 300px;
-    object-fit: cover;
-    transition: opacity 0.25s ease-in-out;
-    
+    object-fit: scale-down;
+    font-family: 'Rajdhani', sans-serif;; 
+    font-size: 1.20rem;
+    text-align: center;
+    opacity: 0;
+    color: rgba(12, 12, 24, 0.733);   
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    }
+
+  .gallery-frame:hover .text {
+    opacity:0.7;
   }
-  
-  .gallery-img:hover {
-    opacity: .7;
+
+.gallery-img:hover {
+    opacity:0.5;
   }
