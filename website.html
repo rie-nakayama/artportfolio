@@ -1,136 +1,192 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
+    <head>        
         <title>
             Rie Nakayama Art
         </title>
         <link href="style.css" type="text/css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+            </style>
     </head>
-   
-    <body>
-        <!--Title and bio-->        
-        <div class="bio">
-            <h1>
+    
+    <body>        
+        <div class="coverbox">
+            <!--Title and bio-->
+            <div class="bio">
+                <h1>
                 RIE NAKAYAMA
-            </h1>
-            <h2>
+                </h1>
+                <h2>
                 Tokyo based contemporary artist. Romantic portraits and creater of whimsical character illustrations Riechanchanchann 
-            </h2>
-                      
-        </div>
-        <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+                </h2>
+            </div>
+            
+            <nav role="navigation" class="primary-navigation">
+                <ul>
+                    <li><a href="#acrylic">Acrylic</a></li>
+                    <li><a href="#pastel">Pastel</a></li>
+                    <li><a href="#watercolor">Watercolor</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
 
-        <nav role="navigation" class="primary-navigation">
-          <ul>
-            <li><a href="#acrylic">Acrylic</a></li>
-            <li><a href="#pastel">Pastel</a></li>
-            <li><a href="#watercolor">Watercolor</a></li>
-            <li><a href="#Contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <!-- works Image Gallery → Image Frame → Image (with link for 1st group)-->
-        <div class="gallery-grid">
-            <figure class="gallery-frame">
-                <a id="acrylic">
-                <img class="gallery-img" src="images/painting-1.JPG" alt="sad blonde"></a> 
-                <div class="text">All I see is Rose (acrylic)</div>                           
+             <!-- works Image Gallery → Image Frame → Image (with link for 1st group)-->
+             <div class="gallery-grid">
+                <figure class="gallery-frame">                    
+                    <a id="acrylic">
+                        <img class="gallery-img" src="images/painting-1.JPG" alt="sad blonde">
+                    </a>                        
+                    <div class="overlay">
+                        <div class="text">All I see is Rose<br>Acrylic<br>2020</div>
+                </div>                           
+                </figure>
+                <figure class="gallery-frame">                
+                    <img class="gallery-img" src="images/painting-2.JPG" alt="sad purple">
+                    <div class="overlay">
+                        <div class="text">The End<br>Acrylic<br>2020</div>
+                    </div>
             </figure>
-            <figure class="gallery-frame">
-                <img class="gallery-img" src="images/painting-2.JPG" alt="sad purple">
-                <div class="text">The End (acyrlic)</div>
-            </figure>
-            <figure class="gallery-frame">
-                <img class="gallery-img" src="images/painting-3.JPG" alt="pink romance">
-                <div class="text">Trial Over (acyrlic)</div>
-            </figure>
-            <figure class="gallery-frame">
-                <img class="gallery-img" src="images/painting-4.JPG" alt="purple pop" >
-                <div class="text">Not Mysterious (acyrlic)</div>
-            </figure>
-            <figure class="gallery-frame">
-                <img class="gallery-img" src="images/paitning-5.JPG" alt="lets hug">
-                <div class="text">Embrace (acrylic)</div>
-            </figure>    
-            <figure class="gallery-frame">
-                <a id="pastel">
-                <img class="gallery-img" src="images/pastel-1.jpg" alt="kimono girl"></a>
-                <div class="text">Do you see me? (pastel)</div>
-            </figure> 
-            <figure class="gallery-frame">              
-                <img class="gallery-img" src="images/pastel-2.JPG" alt="blue girl">
-                <div class="text">Days Gone By (pastel)</div>
-            </figure>
-            <figure class="gallery-frame">              
-                <img class="gallery-img" src="images/pastel-3.JPG" alt="blue girl">
-                <div class="text">Kai (pastel)</div>
-            </figure>
-            <figure class="gallery-frame">              
-                <img class="gallery-img" src="images/pastel-4.JPG" alt="blue girl">
-                <div class="text">Desire (pastel)</div> 
-            </figure>
-            <figure class="gallery-frame">              
-                <img class="gallery-img" src="images/pastel-5.JPG" alt="blue girl">
-                <div class="text">Woman Getting Undressed (pastel)</div> 
-            </figure>
-            <figure class="gallery-frame">   
-                <img class="gallery-img" src="images/pastel-6.JPG" alt="blue girl">
-                <div class="text">Just a Scratch (pastel)</div> 
-            </figure>
-            <figure class="gallery-frame">  
-                <a id="watercolor">              
-                <img class="gallery-img" src="images/watercolor-2.JPG" alt="blue girl"></a> 
-                <div class="text">Fade Away (watercolor)</div> 
-            </figure>
-            <figure class="gallery-frame">              
-                <img class="gallery-img" src="images/watercolor-3.JPG" alt="Look Away">
-                <div class="text">Look Away (watercolor)</div> 
-            </figure>
-            <figure class="gallery-frame">              
-                <img class="gallery-img" src="images/watercolor-4.JPG" alt="blue girl">
-                <div class="text">This is not the end  (watercolor)</div> 
-            </figure>
-            <figure class="gallery-frame">              
-                <img class="gallery-img" src="images/watercolor-6.JPG" alt="blue girl">
-                <div class="text">Thinking (watercolor)</div> 
-            </figure>
-            <figure class="gallery-frame">              
-                <img class="gallery-img" src="images/watercolor-1.JPG" alt="blue girl">
-                <div class="text">
-                    Rejoice 
-                    <br>(watercolor)
+                <figure class="gallery-frame">
+                    <img class="gallery-img" src="images/painting-3.JPG" alt="pink romance">
+                    <div class="overlay">
+                      <div class="text">Trial Over<br>Acrylic<br>2020</div>  
+                    </div>  
+                </figure>
+                <figure class="gallery-frame">
+                    <img class="gallery-img" src="images/painting-4.JPG" alt="purple pop" >
+                    <div class="overlay">
+                        <div class="text">Not Mysterious<br>Acrylic<br>2020</div>
+                    </div>
+                </figure>
+                <figure class="gallery-frame">
+                    <img class="gallery-img" src="images/paitning-5.JPG" alt="lets hug">
+                    <div class="overlay">
+                        <div class="text">Embrace<br>Acrylic<br>2020</div>
+                    </div>
+                </figure>    
+                <figure class="gallery-frame">
+                    <a id="pastel">
+                    <img class="gallery-img" src="images/pastel-1.jpg" alt="kimono girl"></a>
+                    <div class="overlay">
+                        <div class="text">Do you see me?<br>Pastel<br>2020</div>
+                    </div>
+                </figure> 
+                <figure class="gallery-frame">              
+                    <img class="gallery-img" src="images/pastel-2.JPG" alt="blue girl">
+                    <div class="overlay">
+                        <div class="text">Days Gone By<br>Pastel<br>2019</div>
+                    </div>
+                    
+                </figure>
+                <figure class="gallery-frame">              
+                    <img class="gallery-img" src="images/pastel-3.JPG" alt="blue girl">
+                    <div class="overlay">
+                        <div class="text">Kai<br>Pastel<br>2020</div>
+                    </div>                    
+                </figure>
+                <figure class="gallery-frame">              
+                    <img class="gallery-img" src="images/pastel-4.JPG" alt="blue girl">
+                    <div class="overlay">
+                        <div class="text">Desire<br>Pastel
+                    <br>
+                    2020</div> 
+                </div>
+                    
+                </figure>
+                <figure class="gallery-frame">              
+                    <img class="gallery-img" src="images/pastel-5.JPG" alt="blue girl">
+                    <div class="overlay">
+                        <div class="text">Undress<br>Pastel<br>2019</div> 
+                </div>
+                </figure>
+                <figure class="gallery-frame">   
+                    <img class="gallery-img" src="images/pastel-6.JPG" alt="blue girl">
+                    <div class="overlay">
+                        <div class="text">Just a Scratch<br>Pastel
+                    <br> 
+                    2018</div>
+                    </div>
+                </figure>
+                <figure class="gallery-frame">  
+                    <a id="watercolor">              
+                    <img class="gallery-img" src="images/watercolor-2.JPG" alt="blue girl"></a> 
+                    <div class="overlay">
+                      <div class="text">Fade Away<br>Watercolor<br>
+                    2019</div>   
+                    </div>
+                    
+                </figure>
+                <figure class="gallery-frame">              
+                    <img class="gallery-img" src="images/watercolor-3.JPG" alt="Look Away">
+                    <div class="overlay">
+                     <div class="text">Look Away<br>Watercolor<br>2019
+                    </div>   
+                    </div>
+                    
+                </figure>
+                <figure class="gallery-frame">              
+                    <img class="gallery-img" src="images/watercolor-4.JPG" alt="blue girl">
+                    <div class="overlay">
+                       <div class="text">This is not the end  
+                        <br>Watercolor<br>2019
+                    </div> 
+                    </div>
+                     
+                </figure>
+                <figure class="gallery-frame">              
+                    <img class="gallery-img" src="images/watercolor-6.JPG" alt="blue girl">
+                    <div class="overlay">
+                       <div class="text">Thinking<br>Watercolor
+                        <br>
+                        2019
+                    </div> 
+                    </div>
+                     
+                </figure>
+                <figure class="gallery-frame">              
+                    <img class="gallery-img" src="images/watercolor-1.JPG" alt="blue girl">
+                    <div class="overlay">
+                        <div class="text">
+                    Rejoice<br>Watercolor
                     <br>
                     2019
-                </div> 
-            </figure>
-            <figure class="gallery-frame">              
-                <img class="gallery-img" src="images/watercolor-5.JPG" alt="blue girl">
-                <div class="text">Human (watercolor)</div> 
-            </figure>                    
+                    </div>
+                    </div> 
+                </figure>
+                <figure class="gallery-frame">              
+                    <img class="gallery-img" src="images/watercolor-5.JPG" alt="blue girl">
+                    <div class="overlay">
+                      <div class="text">Human<br>Watercolor<br>2019</div>  
+                    </div>
+                     
+                </figure> 
+            </div>                 
+        
+            <footer>
+                    <h3>
+                        <a id="Contact">Contact</a> 
+                    </h3>
+                    <p>Instagram (portraits)     : 
+                    <a href="https://www.instagram.com/callmehydrangea/">@callmehydrangea</a> 
+                    </p>
+                    <p>
+                        Instagram (illustrations): 
+                            <a href="https://www.instagram.com/riechanchanchann/">@riechanchanchann</a> 
+                    </p>
+                    <p>
+                        GIPHY Channel (illustrations): 
+                        <a href="https://giphy.com/riechanchanchann">@riechanchanchann</a> 
+                    </p>
+            </footer>
+
         </div>
     </body>
-
-    <footer>
-        <h3>
-            <a id="Contact">Contact</a> 
-          
-        </h3>
-        <ul>
-            <li>Instagram (portraits)     : <a href="https://www.instagram.com/callmehydrangea/">
-            @callmehydrangea</a> 
-            </li>
-            <li>Instagram (illustrations): <a href="https://www.instagram.com/riechanchanchann/">
-            @riechanchanchann</a> 
-            </li>
-            <li>GIPHY Channel (illustrations): <a href="https://giphy.com/riechanchanchann">
-                @riechanchanchann</a> 
-            </li>
-        </ul>
-        
-     </footer>
 </html>
